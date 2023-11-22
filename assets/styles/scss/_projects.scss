@@ -1,0 +1,38 @@
+.projects__row {
+   display: grid;
+   row-gap: 3rem;
+
+   @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      row-gap: 0;
+
+      >div:not(:first-of-type):not(:last-of-type) {
+         grid-row: span 3;
+      }
+
+      >div:last-of-type {
+         align-self: center;
+      }
+   }
+
+   @media (min-width: 1200px) {
+      row-gap: 1.5rem;
+   }
+}
+
+.project {
+   .project__img {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .project__info {
+      padding: 2.5rem 2rem;
+      background: #181823;
+
+      .project__title {
+         margin-bottom: 0.8125rem;
+      }
+   }
+}

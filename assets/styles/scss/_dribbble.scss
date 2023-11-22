@@ -1,0 +1,34 @@
+.dribbble {
+   padding-bottom: var(--section-gutter-y);
+
+   .dribbble__text {
+      padding-top: var(--section-gutter-y);
+      padding-bottom: var(--section-gutter-y);
+
+      .h1 {
+         font-size: clamp(1.8rem, 8.9vw, 2rem);
+      
+         @media(min-width: 576px) {
+            font-size: 1.875rem;
+         }
+   
+         @media(min-width: 768px) {
+            font-size: 3.5rem;
+         }
+      }
+
+      .dribbble__link {
+         margin-top: 5rem;
+         color: #fff;
+         text-decoration: underline;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+
+   img {
+      max-width: 100%;
+   }
+}

@@ -1,0 +1,27 @@
+.about {
+   background: #fff3e4;
+
+   .about__text {
+      padding-top: var(--section-gutter-y);
+      padding-bottom: var(--section-gutter-y);
+
+      .h1 {
+         color: #181823;
+         font-size: clamp(1.8rem, 8.9vw, 2rem);
+      }
+
+      .about__link {
+         margin-top: 5rem;
+         color: #181823;
+         text-decoration: underline;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+
+   img {
+      max-width: 100%;
+   }
+}

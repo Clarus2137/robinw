@@ -1,0 +1,16 @@
+.skillset__text {
+   padding-bottom: 1rem;
+}
+
+.skillset__item {
+   margin-top: 3rem;
+
+   @media(min-width: 992px) {
+      margin-top: 0;
+   }
+
+   .skillset__title {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+   }
+}

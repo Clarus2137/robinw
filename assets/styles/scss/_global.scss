@@ -1,0 +1,154 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: #000;
+   color: var(--text-color-primary);
+   font-size: 1.125rem;
+   font-family: 'Sen', sans-serif;
+   line-height: 1.5;
+}
+
+section:not(.greetings, .about, .instagram, .dribbble) {
+   padding-top: var(--section-gutter-y);
+   padding-bottom: var(--section-gutter-y);
+}
+
+.custom-container {
+   margin-right: 0;
+   padding-right: 0;
+}
+
+p {
+   margin: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+h1,
+.h1 {
+   margin-bottom: 1.5rem;
+   color: var(--text-color-title);
+   font-size: clamp(1.85rem, 9vw, 2rem);
+   font-weight: 700;
+
+   >span {
+      opacity: 0.5;
+   }
+}
+
+section {
+   &.experience,
+   &.projects {
+      .h1 {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.section-title {
+   margin-bottom: 0.5rem;
+   color: #8491A0;
+   font-size: 1rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+[class$="__title"] {
+   color: var(--text-color-title);
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.butn {
+   padding: 1.5rem 2rem;
+   border: 1px solid #5221E6;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   transition: 0.3s;
+
+   &:hover {
+      background: #5221e6;
+   }
+}
+
+
+
+
+
+@media (min-width: 576px) {
+   .custom-container {
+      max-width: calc(100% - (100% - 540px)/2);
+
+      >.row {
+         margin-right: 0;
+      }
+   }
+
+   h1,
+   .h1 {
+      font-size: 1.875rem;
+   }
+}
+
+
+
+@media (min-width: 768px) {
+   .custom-container {
+      max-width: calc(100% - (100% - 720px)/2);
+   }
+
+   h1,
+   .h1 {
+      font-size: 3.5rem;
+   }
+}
+
+
+
+@media (min-width: 992px) {
+   .custom-container {
+      max-width: calc(100% - (100% - 960px)/2);
+   }
+}
+
+
+
+@media (min-width: 1200px) {
+   .custom-container {
+      max-width: calc(100% - (100% - 1140px)/2);
+   }
+}
+
+
+
+@media (min-width: 1400px) {
+   .custom-container {
+      max-width: calc(100% - (100% - 1320px)/2);
+   }
+}
+
+
+
+@media (min-width: 768px) and (max-width:991.9px) {
+   [class$="__title"] {
+      font-size: 1.7rem;
+   }
+}

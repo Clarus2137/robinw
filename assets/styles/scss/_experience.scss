@@ -1,0 +1,25 @@
+.experience__item {
+   margin-top: 3rem;
+   font-size: 1rem;
+
+   .experience__number {
+      font-size: 117px;
+      line-height: 1.3;
+   }
+
+   .experience__title {
+      margin-bottom: 1rem;
+
+      .google {
+         color: #3CC74E;
+      }
+
+      .facebook {
+         color: #609BFF;
+      }
+
+      .dribbble {
+         color: #E95D90;
+      }
+   }
+}

@@ -1,0 +1,22 @@
+.photo {
+   .photo__filters {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      row-gap: 1.5rem;
+
+      .butn {
+         width: 100%;
+         padding: 0.75rem 0;
+      }
+   }
+
+   .photo__item {
+      &:not(:last-child) {
+         margin-bottom: 1.5rem;
+      }
+   
+      & > img {
+         max-width: 100%;
+      }
+   }
+}
