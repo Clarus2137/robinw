@@ -164,7 +164,7 @@ section.experience .h1, section.projects .h1 {
   color: inherit;
 }
 .nav-link:focus {
-  color: inherit;
+  color: var(--text-color-title);
 }
 
 @media (min-width: 992px) {
