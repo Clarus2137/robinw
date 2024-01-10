@@ -210,9 +210,9 @@ section.experience .h1, section.projects .h1 {
   .greetings::before {
     background-size: contain;
     top: 0;
-    transition: 0.75s ease-in-out;
     left: -25%;
     opacity: 0;
+    transition: 0.75s ease-in-out;
   }
   .greetings.visible::before {
     left: 0;
@@ -223,9 +223,9 @@ section.experience .h1, section.projects .h1 {
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    left: 100%;
+    left: 50%;
     opacity: 0;
-    transition: 1.2s ease-in-out;
+    transition: 0.75s ease-in-out;
   }
   .greetings .greetings__text.visible {
     left: 0;
