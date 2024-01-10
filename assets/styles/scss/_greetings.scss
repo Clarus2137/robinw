@@ -43,12 +43,29 @@
       &::before {
          background-size: contain;
          top: 0;
+         transition: 0.75s ease-in-out;
+         left: -25%;
+         opacity: 0;
+      }
+
+      &.visible::before {
+         left: 0;
+         opacity: 1;
       }
 
       .greetings__text {
          display: flex;
          flex-wrap: wrap;
          align-items: center;
+         position: relative;
+         left: 100%;
+         opacity: 0;
+         transition: 1.2s ease-in-out;
+
+         &.visible {
+            left: 0;
+            opacity: 1;
+         }
       }
    }
 
