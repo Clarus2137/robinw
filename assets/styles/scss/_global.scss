@@ -10,6 +10,7 @@ body {
    font-size: 1.125rem;
    font-family: 'Sen', sans-serif;
    line-height: 1.5;
+   overflow-x: hidden;
 }
 
 section:not(.greetings, .about, .instagram, .dribbble) {
