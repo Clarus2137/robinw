@@ -27,6 +27,23 @@ function scrollToAnchor() {
    }
 }
 
+function scrollToTop() {
+   const toTopBtn = document.getElementById('to-top');
+   const headerHeight = document.getElementById('header').clientHeight;
+
+   toTopBtn.style.transitionDuration = 0.4;
+
+   window.addEventListener('scroll', () => {
+      if(window.scrollY > headerHeight) {
+         toTopBtn.classList.add('visible');
+         toTopBtn.style.opacity = 1;
+      } else {
+         toTopBtn.classList.remove('visible');
+         toTopBtn.style.opacity = 0;
+      }
+   });
+}
+
 
 
 showGreetings();
@@ -34,3 +51,5 @@ showGreetings();
 showGreetingsText();
 
 scrollToAnchor();
+
+scrollToTop();
